@@ -4,12 +4,16 @@ body {
 
 /* Hero section */
 .hero {
-  background: url("../images/img1.jpg") no-repeat center center/cover;
-  min-height: 70vh;
+  /* Example background */
+  background: #f8f9fa; /* Bootstrap light background */
+  color: #212529;      /* Bootstrap dark text */
 }
 
 /* Navbar */
 .navbar-brand {
+  color: #2c3e50 !important;
+}
+.h1{
   color: #2c3e50 !important;
 }
 
