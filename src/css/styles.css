@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero section */
+.hero {
+  background: url("../images/img1.jpg") no-repeat center center/cover;
+  min-height: 70vh;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: #2c3e50 !important;
+}
+
+/* Fade-in: initial state (preload) -> remove preload to reveal */
+html.preload, body.preload {
+  opacity: 0;
+  transition: opacity 600ms ease-in;
+}
+html.loaded, body.loaded {
+  opacity: 1;
+  transition: opacity 600ms ease-in;
+}
+
+/* Simple cookie consent banner */
+#moj-cookie-banner {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 16px;
+  z-index: 1050;
+  background: rgba(20, 20, 20, 0.95);
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#moj-cookie-banner .moj-banner-inner {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+#moj-cookie-banner .moj-banner-text {
+  flex: 1 1 auto;
+  padding-right: 10px;
+}
+#moj-cookie-banner .moj-banner-actions {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 560px) {
+  #moj-cookie-banner .moj-banner-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #moj-cookie-banner .moj-banner-actions {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mines of Jupiter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="script" href="./js/main.js">
+</head>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><b>Mines of Jupiter</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Escape to Your Creative Sanctuary on Møn</h1>
+      <p class="lead">A rural retreat for artists and dreamers, surrounded by nature on the island of Møn, Denmark.</p>
+    </div>
+  </header>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3"><img src="./images/1.jpg" class="img-fluid rounded" alt="Gallery"></div>
+        <div class="col-md-6 col-lg-3"><img src="./images/2.jpg" class="img-fluid rounded" alt="Gallery"></div>
+        <div class="col-md-6 col-lg-3"><img src="./images/3.jpg" class="img-fluid rounded" alt="Gallery"></div>
+        <div class="col-md-6 col-lg-3"><img src="./images/4.jpg" class="img-fluid rounded" alt="Gallery"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About Mines of Jupiter</h2>
+      <p class="lead text-center mb-5">
+        Mines of Jupiter is more than just an artist's residency—it's a private sanctuary for deep focus and creative discovery, located on a quiet working farm on the island of Møn.
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4>The Studio</h4>
+          <p>
+            Step into a modern, light-filled studio with high ceilings and an east-facing skylight. 
+            Enjoy a private bedroom, kitchenette, bathroom, and loft space. Wake up to the sunrise 
+            over ancient burial mounds—an inspiring view that connects you to history and nature.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4>The Location</h4>
+          <p>
+            Nestled on the west side of Møn, the studio is close to beaches, historic churches, and the harbor. 
+            The island is known for its unique Ice Age landscapes and thriving art scene, making it a haven for creativity and reflection.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>The Experience</h4>
+          <p>
+            Share the farm with a few chickens and a friendly cat, and recharge with optional sessions in the wood-heated sauna and cold tub. 
+            Whether you're a writer, musician, or visual artist, this is a place designed for focus, flow, and inspiration.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4>Celestial Inspiration</h4>
+          <p>
+            The name “Mines of Jupiter” is inspired by an old Jimi Hendrix song—setting the tone for a stay that is creative, cosmic, and unforgettable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Book Your Stay</h2>
+      <form class="row g-3" id="bookingForm">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-md-6">
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>“It was an extraordinary treat to stay in your completely transformed barn during summer. As visual artists we are crazy with your currant red floors and the charming surroundings. We are sure that many more creative ideas and tunes will emerge from Mines of Jupiter.”</p>
+            <footer class="blockquote-footer">Rosita Kær and Orin Bristow</footer>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>“I was surprised to experience the acoustics of your place. It's by far the best place on Vestmøn for small concerts and gigs. I'll gladly use it again for one of my intimate concerts in the future.”</p>
+            <footer class="blockquote-footer">Mads Mouritz, musician & composer</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Mines of Jupiter</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
