@@ -39,6 +39,23 @@
   <section class="py-5">
     <div class="container">
       <form class="row g-3 shadow p-4 rounded bg-white" method="POST" action="{% url 'booking' %}">
+        <!-- Booking Details (price, location, special requests ect..) -->
+         <div class="col-12">
+          <h2 class="mb-4">Booking Details</h2>
+          <p class="mb-1"><strong>Location:</strong> Møn, Denmark</p>
+          <p class="mb-1"><strong>Accommodation Options:</strong> Private Studio, Loft Space, Shared Room</p>
+          <p class="mb-1"><strong>Rates:</strong> €1500 Euro pr month plus electricity.</p>
+          <p class="mb-1"><strong>Amenities:</strong> Wi-Fi, Art Supplies, Nature Trails, Wood-heated Sauna, Cold Tub</p>
+
+
+        <!-- Booking Details (user input)-->
+        <div class="col-12">
+          <h2 class="mb-4">Reservation Form</h2>
+          <div class="alert alert-info" role="alert">
+            Please fill out the form below to request a booking. We will get back to you with availability and confirmation.
+          </div>
+        </div>
+
         <!-- Personal Info -->
         <h4 class="mb-3">Your Details</h4>
         <div class="col-md-6">
@@ -76,26 +93,8 @@
           <label for="room" class="form-label">Room Type</label>
           <select class="form-select" id="room" name="room">
             <option value="studio">Studio (Private)</option>
-            <option value="loft">Loft Space</option>
-            <option value="shared">Shared Room</option>
+            <option value="loft">Shared</option>
           </select>
-        </div>
-
-        <!-- Extras -->
-        <h4 class="mt-4 mb-3">Optional Add-ons</h4>
-        <div class="col-md-6">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="sauna" name="sauna">
-            <label class="form-check-label" for="sauna">Wood-heated Sauna Access</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="coldtub" name="coldtub">
-            <label class="form-check-label" for="coldtub">Cold Tub Sessions</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="meals" name="meals">
-            <label class="form-check-label" for="meals">Farm-to-Table Meals</label>
-          </div>
         </div>
 
         <!-- Notes -->
